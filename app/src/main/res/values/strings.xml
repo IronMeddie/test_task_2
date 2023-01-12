@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">test_task2</string>
+    <string name="search_in_vodovoz">Искать на vodovoz</string>
+    <string name="search_textfield_icon">search textfield icon</string>
+    <string name="brands">Бренды</string>
+    <string name="watchl_all">см. все</string>
+    <string name="for_us">для нас</string>
+    <string name="example_descr">Вода «Архыз» добывается высоко в горах и содержит исключительно талый ледниковый продукт, который не смешивается с грунтовыми водами, а потому отличается особой структурой и целебными свойствами.</string>
+    <string name="example_title">Архыз</string>
+    <string name="example_sale_price">598 ₽</string>
+    <string name="example_price_without_sale">680 ₽</string>
+    <string name="home_icon">home icon</string>
+    <string name="main">Главная</string>
+    <string name="catalog">Каталог</string>
+    <string name="favorite">Избранное</string>
+    <string name="profile">Профиль</string>
+    <string name="wathed">Просмотренное</string>
+</resources>
