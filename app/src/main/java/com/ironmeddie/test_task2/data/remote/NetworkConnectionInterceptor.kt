@@ -8,6 +8,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import okhttp3.Interceptor
 import javax.inject.Inject
 import okhttp3.Response
+import java.io.IOException
 
 class NetworkConnectionInterceptor @Inject constructor(
     @ApplicationContext private val context: Context
@@ -35,4 +36,4 @@ class NetworkConnectionInterceptor @Inject constructor(
     }
 }
 
-class NoInternetException(message : String): Exception(message)
+class NoInternetException(message : String): IOException(message)
