@@ -56,6 +56,17 @@ fun MainScreen(navController: NavController, viewModel: MainScreenViewModel = hi
                         }
                     }
                 }
+                else ->{
+                    item {
+                        Box(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .height(120.dp), contentAlignment = Alignment.Center
+                        ) {
+                            Text(text = "conection failure")
+                        }
+                    }
+                }
             }
             item {
                 Brands()
@@ -64,7 +75,9 @@ fun MainScreen(navController: NavController, viewModel: MainScreenViewModel = hi
                 Spacer(modifier = Modifier.height(4.dp))
             }
             item {
-                Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp)) {
+                Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 8.dp)) {
                     Text(text = stringResource(R.string.wathed), fontWeight = FontWeight.Bold)
                     Text(text = stringResource(R.string.watchl_all), color = MaterialTheme.colors.primary)
                 }

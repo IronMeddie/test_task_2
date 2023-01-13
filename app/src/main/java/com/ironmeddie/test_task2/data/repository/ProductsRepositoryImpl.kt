@@ -16,6 +16,7 @@ class ProductsRepositoryImpl @Inject constructor(private val apiService: ApiServ
         when (res){
             is DataResource.Success -> emit(DataResource.Success(res.data.toProducts()))
             is DataResource.Failure -> emit(res)
+            else -> emit(DataResource.Loading)
         }
 
 
